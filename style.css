@@ -1,9 +1,41 @@
+/* It's a website univarsarl design part */
 *{
     margin: 0%;
     padding: 0%;
     letter-spacing: 2px;
     
 }
+
+/* This is menubar/navbar part design */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+    color: aliceblue;
+
+}
+nav li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+nav >ul{
+    display: flex;
+
+}
+nav .drop{
+    display: none;
+    position: absolute;
+    background-color: #005FAC;
+    
+}
+nav .drop>li{
+    text-align: center;
+}
+nav .dropMenu:hover .drop{
+    display: block;
+    
+}
+/* This is header text and background image part design */
 .headerButton{
     color: black;
 }
@@ -28,6 +60,7 @@ header{
     color: #068cfa;
     font-size: 800;
 }
+/* This is body image and text part design */
 .seperate{
     display: flex;
     
@@ -42,47 +75,45 @@ header{
 .textSection p i{
     color: red;
 }
+/* This is section description part design*/
+.planing{
+    width: 20%;
+    margin: 2% 43%;
+}
 .section{
     display: flex;
-    /* justify-content: space-between; */
-   
-    margin: 0% 10%;
-    padding: 3%;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
 }
-.section img{
-    width: 30%;
-    height: auto;
-    margin:0% 0% 8% 30%;
+
+.section>div>img{
+    margin: 8% 0%;
 }
-.planing{
-    margin: 10% 0% 2% 0%;
-    text-align: center;
+.section>div>p{
+    margin: 8% 0% 20% 0%;
 }
-.section>div>h3{
-    margin-bottom: 5%;
-}
-.section .smoke .shop{
-    width: 50px;
-}
-.container{
+/* Background image and linear gradient part design */
+.gradientBox{
     background-image: url('watch.png');
-    color: #dfc8c8;
-    width: 70%;
-    margin-left: 20%;
-    height: 30vh;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
-    background-size: 100%;
+    width: 80%;
+    height: 30vh;
+    margin: 5% 10%;
     
-     
 }
-.container>.text{
+.gradientBox>.text{
+    
+    color: white;
+    background-image: linear-gradient(to left, rgba(51, 86, 243, 0.185), rgba(112, 137, 245, 0.918));
     width: 100%;
     height: 100%;
-    position: fixed;
-    padding: 10% 0% 0% 15%;
-    background-image: linear-gradient(to left, rgba(159, 10, 245, 0), rgba(108, 15, 230, 0.5));
+    
 }
+/* It's a footer part */
 #email{
     background-color: #151414;
     padding: 10px;
@@ -134,32 +165,4 @@ footer{
 .logo>img{
     margin: 1% 0% 10% 1%;
     width: 30px;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 2% 5%;
-    color: aliceblue;
-
-}
-nav li{
-    list-style-type: none;
-    margin-left: 30px;
-}
-nav >ul{
-    display: flex;
-
-}
-nav .drop{
-    display: none;
-    position: absolute;
-    background-color: #005FAC;
-    
-}
-nav .drop>li{
-    text-align: center;
-}
-nav .dropMenu:hover .drop{
-    display: block;
-    
 }
